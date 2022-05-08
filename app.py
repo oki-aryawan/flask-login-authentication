@@ -5,7 +5,6 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
-from markupsafe import Markup
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
@@ -37,8 +36,7 @@ class RegisterForm(FlaskForm):
     password = PasswordField(validators=[
                              InputRequired(), Length(min=8, max=20)], render_kw={"placeholder": "Password"})
 
-    submit_value = Markup('<span class="oi oi-check" title="Submit"></span>')
-    submit = SubmitField(submit_value)
+    submit = SubmitField('Register')
 
     def validate_username(self, username):
         existing_user_username = User.query.filter_by(
@@ -55,8 +53,7 @@ class LoginForm(FlaskForm):
     password = PasswordField(validators=[
                              InputRequired(), Length(min=8, max=20)], render_kw={"placeholder": "Password"})
 
-    submit_value = Markup('Login')
-    submit = SubmitField(submit_value)
+    submit = SubmitField('Login')
 
 
 @app.route('/')
