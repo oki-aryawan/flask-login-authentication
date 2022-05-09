@@ -96,7 +96,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title> Register</title>
     <link rel="icon" type="image/x-icon" href="/static/python.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
@@ -107,20 +107,17 @@
   <div class="ui inverted vertical masthead center aligned segment">
     <div class="ui text container">
 
-      <h1 class="ui inverted header">
-          <img class="ui image" src="static/flask.png"> <br>
-        Login Authentication System in Flask
+      <h1 class="ui header">
+          <i class="check green circle icon "></i>
+      </h1>
+      <h1 style="margin-top: -20px" class="ui inverted header">
+        Completed
       </h1>
         <br>
         <div>
             <div class="ui primary button">
-                <a style="color: white" href="{{ url_for('login') }}">
+                <a style="color: white" href="{{url_for('login')}}">
                     Login
-                </a>
-            </div>
-            <div class="ui primary button" >
-                <a style="color: white" href="{{ url_for('register') }}">
-                    Sign Up
                 </a>
             </div>
         </div>

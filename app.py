@@ -95,9 +95,14 @@ def register():
         new_user = User(username=form.username.data, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
-        return redirect(url_for('login'))
+        return redirect(url_for('success'))
 
     return render_template('register.html', form=form)
+
+
+@app.route('/success')
+def success():
+    return render_template('success.html')
 
 
 if __name__ == "__main__":
