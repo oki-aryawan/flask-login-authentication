@@ -1,9 +1,8 @@
 
 ## Python Flask Authentication
 ![home](/static/ss.png)
-
+![login](/static/login.PNG)
 This repository forked form this [repository](https://github.com/arpanneupane19/Python-Flask-Authentication-Tutorial) and the tutorial [video](https://www.youtube.com/watch?v=71EU8gnZqZQ) 
-
 I customize some part, especially added some css code to make it more beautiful.
 
 ## Techstack
@@ -11,7 +10,6 @@ I customize some part, especially added some css code to make it more beautiful.
 - SQLite
 - Semantic-UI
 
-![login](/static/login.PNG)
 
 
 ## Installation
